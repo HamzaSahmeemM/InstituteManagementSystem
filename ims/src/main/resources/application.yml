@@ -1,0 +1,17 @@
+# Port configuration
+server:
+  port: 6063
+ 
+
+spring:
+  #Data base configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tokenbookingapp
+    username: hawk
+    password: hawk
+    driverClassName: org.postgresql.Driver 
+  #Jpa Config  
+  jpa:
+    hibernate:
+      ddl-auto: update 
+    show-sql: true   
