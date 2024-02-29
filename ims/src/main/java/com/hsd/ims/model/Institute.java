@@ -9,9 +9,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Institute {
 	
 	@Id
@@ -21,6 +18,33 @@ public class Institute {
 	private String location;
 	private String contact;
 	
-	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setLocation(String location) {
+		this.location = location;
+	}
+	public String getContact() {
+		return contact;
+	}
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+	@Override
+	public String toString() {
+		return "Institute [id=" + id + ", name=" + name + ", location=" + location + ", contact=" + contact + "]";
+	}
 	
 }

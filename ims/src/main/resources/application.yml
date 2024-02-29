@@ -1,7 +1,11 @@
 # Port configuration
 server:
   port: 6063
- 
+  ssl:
+   key-store-type : PKCS12
+   key-store: classpath:ssl/keystore.p12
+   key-store-password : ims@ims
+   key-alias : ims
 
 spring:
   #Data base configuration
@@ -15,3 +19,5 @@ spring:
     hibernate:
       ddl-auto: update 
     show-sql: true   
+    
+    
